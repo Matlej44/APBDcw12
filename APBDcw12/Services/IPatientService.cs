@@ -4,5 +4,5 @@ namespace APBDcw12.Services;
 
 public interface IPatientService
 {
-    public Task<PatientSearchDTO> GetPatientAsync(string? search);
+    public Task<List<PatientSearchDTO>> GetPatientAsync(string? search);
 }

@@ -21,8 +21,8 @@ namespace APBDcw12.Controllers
         {
             try
             {
-                var result = 
-                return Ok();
+                var result = _patientService.GetPatientAsync(search);
+                return Ok(result);
             }
             catch (Exception e)
             {
