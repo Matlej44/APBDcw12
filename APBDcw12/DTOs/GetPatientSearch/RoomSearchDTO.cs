@@ -9,10 +9,5 @@ public class RoomSearchDTO
     public WardSearchDTO Ward { get; set; }
     
 
-    public RoomSearchDTO(Room room)
-    {
-        Id = room.Id;
-        HasTv = room.HasTv;
-        Ward = new WardSearchDTO(room.Ward);
-    }
+    
 }

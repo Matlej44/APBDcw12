@@ -16,7 +16,7 @@ public class Program
         builder.Services.AddScoped<IPatientService, PatientService>();
         builder.Services.AddDbContext<DatabaseFirstContext>(options =>
         {
-            options.UseSqlServer(builder.Configuration.GetConnectionString("Default"));
+            options.UseSqlServer(builder.Configuration.GetConnectionString("Docker"));
         });
         builder.Services.AddOpenApi();
 
